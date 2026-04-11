@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0B0B"/>
+      <stop offset="100%" style="stop-color:#111111"/>
+    </linearGradient>
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C6A86B;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#C6A86B;stop-opacity:1"/>
+      <stop offset="70%" style="stop-color:#C6A86B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C6A86B;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle corner accents -->
+  <rect x="40" y="40" width="60" height="1" fill="#C6A86B" opacity="0.4"/>
+  <rect x="40" y="40" width="1" height="60" fill="#C6A86B" opacity="0.4"/>
+  <rect x="1100" y="40" width="60" height="1" fill="#C6A86B" opacity="0.4"/>
+  <rect x="1159" y="40" width="1" height="60" fill="#C6A86B" opacity="0.4"/>
+  <rect x="40" y="549" width="60" height="1" fill="#C6A86B" opacity="0.4"/>
+  <rect x="40" y="550" width="1" height="60" fill="#C6A86B" opacity="0.4"/>
+  <rect x="1100" y="549" width="60" height="1" fill="#C6A86B" opacity="0.4"/>
+  <rect x="1159" y="550" width="1" height="60" fill="#C6A86B" opacity="0.4"/>
+
+  <!-- Main heading: THE BLACK APEX -->
+  <text
+    x="600"
+    y="255"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="92"
+    font-weight="400"
+    fill="#C6A86B"
+    text-anchor="middle"
+    letter-spacing="18"
+  >THE BLACK APEX</text>
+
+  <!-- Gold horizontal rule -->
+  <rect x="200" y="290" width="800" height="1" fill="url(#goldLine)"/>
+
+  <!-- Subtitle: CONSULTANCY -->
+  <text
+    x="600"
+    y="345"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    fill="#C6A86B"
+    text-anchor="middle"
+    letter-spacing="14"
+    opacity="0.75"
+  >CONSULTANCY</text>
+
+  <!-- Tagline -->
+  <text
+    x="600"
+    y="415"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="20"
+    fill="#ffffff"
+    text-anchor="middle"
+    letter-spacing="3"
+    opacity="0.55"
+  >Elite Business Strategy</text>
+
+  <!-- Bottom URL -->
+  <text
+    x="80"
+    y="572"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="15"
+    fill="#C6A86B"
+    letter-spacing="2"
+    opacity="0.65"
+  >theblackapexconsultancy.in</text>
+</svg>
