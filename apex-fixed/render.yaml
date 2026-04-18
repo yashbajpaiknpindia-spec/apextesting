@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: black-apex-consultancy
+    runtime: node
+    plan: free
+    buildCommand: npm install && npx prisma generate && npm run build && npx prisma db push && npx tsx prisma/seed.ts
+    startCommand: node dist/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_EMAIL
+        value: admin@theblackapexconsultancy.com
+      - key: ADMIN_PASSWORD
+        sync: false
+
+databases:
+  - name: black-apex-db
+    plan: free
+    databaseName: apexdb
+    user: apexuser
+    
