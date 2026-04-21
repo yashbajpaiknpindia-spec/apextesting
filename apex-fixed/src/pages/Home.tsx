@@ -308,6 +308,21 @@ BrandInsightsSlider.displayName = 'BrandInsightsSlider';
 
 // ── Home Page ─────────────────────────────────────────────────────────────
 export const Home = () => {
+  useEffect(() => {
+    (window as any).atOptions = {
+      key: 'bf9f963f8dc6ecc5939355cb1de61da3',
+      format: 'iframe',
+      height: 250,
+      width: 300,
+      params: {},
+    };
+    const script = document.createElement('script');
+    script.src = 'https://www.highperformanceformat.com/bf9f963f8dc6ecc5939355cb1de61da3/invoke.js';
+    script.async = true;
+    const container = document.getElementById('ad-banner-300x250');
+    if (container) container.appendChild(script);
+  }, []);
+
   useSEO({
     title: 'Elite Business Strategy for Ambitious Founders',
     description: 'The Black Apex Consultancy helps ambitious founders scale with precision. Expert business strategy, revenue architecture, and operational excellence.',
@@ -467,6 +482,11 @@ export const Home = () => {
             </Link>
           </div>
         </div>
+      </section>
+
+      {/* Ad Banner 300x250 */}
+      <section className="py-10 flex justify-center bg-brand-black">
+        <div id="ad-banner-300x250" />
       </section>
 
       {/* Featured Case Studies */}
